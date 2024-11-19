@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Vitor Ribeiro de Melo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Seção do Cabeçalho com Foto -->
+    <header>
+        <div class="foto-container">
+            <img src="cf18b068-0540-4c9a-8aed-5fbb92cf7a28.jfif" alt="João Vitor Ribeiro de Melo" class="foto">
+        </div>
+        <h1>João Vitor Ribeiro de Melo</h1>
+        <p>Desenvolvedor Júnior</p>
+        <button id="sobreBtn">Sobre</button>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="sobre-conteudo">
+            <h2>Como sou</h2>
+            <p>Sou um desenvolvedor júnior na área de programação, e apesar de ser novo no campo, tenho grande dedicação e foco para aprimorar minhas habilidades. Ao longo do tempo, aprendi a trabalhar com diferentes linguagens de programação e estou sempre buscando aprender mais. Meu objetivo é crescer profissionalmente e contribuir para projetos que sejam desafiadores e impactantes. Acredito que com esforço, dedicação e aprendizado contínuo, posso alcançar grandes resultados e me tornar um profissional de excelência na área de desenvolvimento.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:joaoribeiromelo@gmail.com">joaoribeiromelo@gmail.com</a></p>
+        <p>Telefone: <a href="tel:+559898211176">988211176</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 João Vitor Ribeiro de Melo</p>
+    </footer>
+
+    <!-- Adicionando o script no final -->
+    <script>
+        // Acessa o botão e a seção sobre
+        const sobreBtn = document.getElementById('sobreBtn');
+        const sobreSection = document.getElementById('sobre');
+
+        // Adiciona um evento de clique no botão "Sobre"
+        sobreBtn.addEventListener('click', function() {
+            // Verifica se a seção está visível
+            if (sobreSection.style.display === 'none' || sobreSection.style.display === '') {
+                sobreSection.style.display = 'block'; // Torna a seção visível
+            } else {
+                sobreSection.style.display = 'none'; // Oculta a seção
+            }
+        });
+    </script>
+
+</body>
+</html>
+

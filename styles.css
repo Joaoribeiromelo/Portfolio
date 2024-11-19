@@ -1,0 +1,116 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4CAF50;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Seção sobre */
+#sobre {
+    display: none;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sobre h2 {
+    margin-bottom: 15px;
+}
+
+#sobre p {
+    font-size: 16px;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Seção Contato */
+#contato {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contato a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
