@@ -16,14 +16,33 @@
         <h1>João Vitor Ribeiro de Melo</h1>
         <p>Desenvolvedor Júnior</p>
         <button id="sobreBtn">Sobre</button>
+        <button id="projetosBtn">Projetos</button>
     </header>
 
     <!-- Seção Sobre -->
-    <section id="sobre">
+    <section id="sobre" style="display: none;">
         <div class="sobre-conteudo">
             <h2>Como sou</h2>
             <p>Sou um desenvolvedor júnior na área de programação, e apesar de ser novo no campo, tenho grande dedicação e foco para aprimorar minhas habilidades. Ao longo do tempo, aprendi a trabalhar com diferentes linguagens de programação e estou sempre buscando aprender mais. Meu objetivo é crescer profissionalmente e contribuir para projetos que sejam desafiadores e impactantes. Acredito que com esforço, dedicação e aprendizado contínuo, posso alcançar grandes resultados e me tornar um profissional de excelência na área de desenvolvimento.</p>
         </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" style="display: none;">
+        <h2>Meus Projetos</h2>
+        <ul>
+            <li>
+                <h3>Projeto 1: Portfólio Online</h3>
+                <p>Um site pessoal criado para mostrar meu portfólio de projetos e habilidades.</p>
+                <a href="https://github.com/Joaoribeiromelo/Portfolio" target="_blank">Ver Projeto</a>
+            </li>
+            <li>
+                <h3>Projeto 2: Robo</h3>
+                <p>Um projeto criando usando Robocode.</p>
+                <a href="https://github.com/Joaoribeiromelo/Robot" target="_blank">Ver Projeto</a>
+            </li>
+            
+        </ul>
     </section>
 
     <!-- Seção de Contato -->
@@ -39,21 +58,30 @@
 
     <!-- Adicionando o script no final -->
     <script>
-        // Acessa o botão e a seção sobre
+        
         const sobreBtn = document.getElementById('sobreBtn');
         const sobreSection = document.getElementById('sobre');
 
-        // Adiciona um evento de clique no botão "Sobre"
         sobreBtn.addEventListener('click', function() {
-            // Verifica se a seção está visível
             if (sobreSection.style.display === 'none' || sobreSection.style.display === '') {
-                sobreSection.style.display = 'block'; // Torna a seção visível
+                sobreSection.style.display = 'block';
             } else {
-                sobreSection.style.display = 'none'; // Oculta a seção
+                sobreSection.style.display = 'none';
+            }
+        });
+
+        
+        const projetosBtn = document.getElementById('projetosBtn');
+        const projetosSection = document.getElementById('projetos');
+
+        projetosBtn.addEventListener('click', function() {
+            if (projetosSection.style.display === 'none' || projetosSection.style.display === '') {
+                projetosSection.style.display = 'block';
+            } else {
+                projetosSection.style.display = 'none';
             }
         });
     </script>
 
 </body>
 </html>
-

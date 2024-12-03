@@ -107,6 +107,57 @@ button:hover {
     text-decoration: underline;
 }
 
+/* Seção Projetos */
+#projetos {
+    display: none; /* Oculto inicialmente */
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projetos h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+#projetos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projetos li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#projetos h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+#projetos p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+#projetos a {
+    font-size: 16px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#projetos a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     margin-top: 40px;
